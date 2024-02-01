@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tarea 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Ejercicio #1</h1>
+            Numero: <input type="number" id="num1"><br>
+            Elevado a: <input type="number" id="num2"><br>
+            <button onclick="elevado()">Resultado</button>
+            <h3 id="resultado"></h3>
+
+        <h1>Ejercicio #2</h1>
+        Centigrados: <input type="number" id="cen"><br>
+        <button onclick="centigradosafahrenheit()">Resultado</button>
+        <h3 id="f"></h3>
+
+        <h1>Ejercicio #3</h1>
+        Ingrese nombre: <input type="text" id="name"></input>
+        <br>
+        <button onclick="agregar()">Agregar</button>
+        <br>
+        Ingrese numero: <input type="number" id="cont"></input>
+        <br>
+        <button onclick="filtrar()">Filtrar</button>
+        <br>
+        <h3>Nombres ingesados: </h3>
+        <h3><div id = "lista"></div></h3>
+        <h3>Resultados de Filtracion: </h3>
+        <h3><div id = "filtracion"></div></h3>
+        
+        <h1>Ejercicio #4</h1>
+        
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento">
+
+        <button onclick="calcularEdad()">Calcular Edad</button>
+
+        <p id="resultadoEdad"></p>
+        
+
+
+        
+        <h1>Ejercicio #5</h1>
+        <form id ="formulario" action="#">
+            <textarea id="area" cols=20 rows=10> 
+            Escribe tu texto.</textarea><br>
+            <input type="button" value="Contar las palabras" onClick="wordCount();">
+            
+        </form>
+        <h3 id="numerodePalabras"></h3>
+
+        <h1>Ejercicio #6</h1>
+        Ingrese valor: <input type="number" id="nump"></input>
+        <br>
+        <button onclick="agregarNumero()">Agregar</button>
+        <button onclick="promedio()">Promedio</button>
+        <br>
+        <h3>Nombres ingesados: </h3>
+        <h3><div id = "numeros_listados"></div></h3>
+        <h3 id="respuesta2"></h3>
+
+        <h1>Ejercicio #7</h1>
+        <style>
+            #cuadro {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+            }
+        </style>
+        <h1>Color del Cuadro</h1>
+        <label for="colorInput">Ingrese un color:</label>
+        <input type="text" id="colorInput" placeholder="Ejemplo: #FF5733">
+
+        <button onclick="cambiarColor()">Cambiar Color</button>
+
+        <div id="cuadro"></div>
+
+    </body>
+</html>
